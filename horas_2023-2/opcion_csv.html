@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gráficos con JavaScript</title>
+    <link rel="stylesheet" href="./css/styles_csv.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <input type="file" id="csv-input" accept=".csv" />
+    <section>
+        <div>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <!-- Agregar elementos para ingresar nombres de ejes -->
+    <label for="x-axis-label">Nombre del eje X: </label>
+    <input type="text" id="x-axis-label" />
+
+    <label for="y-axis-label">Nombre del eje Y: </label>
+    <input type="text" id="y-axis-label" />
+
+    <!-- Agregar elementos para escoger tipo de gráfico y colores -->
+    <label for="chart-type">Tipo de gráfico: </label>
+    <select id="chart-type">
+        <option value="bar">Barras</option>
+        <option value="line">Líneas</option>
+        <option value="pie">Pastel</option>
+    </select>
+
+    <label for="dataset-color">Color del conjunto de datos: </label>
+    <input type="color" id="dataset-color" value="#ff0000" />
+
+    <!-- Botón para generar el gráfico -->
+    <button id="generate-chart">Generar Gráfico</button>
+
+    <div id="chart-container">
+        <canvas id="chart"></canvas>
+    </div>
+    
+    <script src="script_csv.js"></script>
+</body>
+</html>
