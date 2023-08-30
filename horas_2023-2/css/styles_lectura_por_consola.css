@@ -1,20 +1,78 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  background-color: #3a3a3a;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    height: 100vh;
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 60% 40%; 
+  height: 100vh; 
+  overflow-y: auto; 
 }
 
-#input_section {
-    padding: 20px;
-    background-color: #f5f5f5;
+
+#data_form {
+  padding: 20px;
+  background-color: #333;
+  border-radius: 0 10px 10px 0;
+  width: 0%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: auto; 
 }
+
+#buttons_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#graficarButton {
+  background-color: #28a745; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#eliminarButton{
+  background-color: #a72828; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+
+}
+
+#graficarButton:hover,
+#eliminarButton:hover {
+  background-color: #1e7e34; 
+}
+
 
 #chart_div {
-    padding: 20px;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto; 
 }

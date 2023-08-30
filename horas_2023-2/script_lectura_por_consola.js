@@ -40,6 +40,7 @@ function graficar() {
 	var options = {
 		title: 'Nombres y Edades',
 		backgroundColor: colorFondo,
+		
 		series: {
 			0: { color: colorGrafico }
 		}
