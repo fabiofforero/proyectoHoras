@@ -4,17 +4,14 @@ body, div, h1, h2, h3, p, input, select, button, label {
     border: 0;
 }
 
-/* Fuente global */
 body {
     font-family: Arial, sans-serif;
 }
 
-/* Fondo de página */
 body {
     background-color: #f0f0f0;
 }
 
-/* Diseño del contenedor principal */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -26,7 +23,6 @@ body {
     box-sizing: border-box;
 }
 
-/* Estilos para la sección de entrada de datos */
 .input-section, .chart-section {
     padding: 20px;
     background-color: white;
@@ -80,7 +76,6 @@ body {
     background-color: #2680c7;
 }
 
-/* Estilos para la sección del gráfico */
 .chart-container {
     display: flex;
     justify-content: center;
