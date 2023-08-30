@@ -39,7 +39,7 @@ function generateCustomChart() {
 
 
     if (selectedChartType === "pie") {
-        selectedDatasetColor.value = blue;
+        selectedDatasetColor.value = "#ff0000";
         selectedDatasetColor.disabled = true;
     } else {
         selectedDatasetColor.disabled = false;

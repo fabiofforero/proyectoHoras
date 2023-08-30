@@ -1,90 +1,79 @@
 body {
+    background-color: #494c4e; 
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+    color: #fff; 
 }
+
+.input-section label,
+.input-section select,
+.input-section input,
+.input-section button {
+    margin-bottom: 10px;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.input-section button {
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 25px;
+    cursor: pointer;
+    width: auto; 
+}
+
+body {
+    background-color: #292b2c; 
+    font-family: Arial, sans-serif;
+    color: #fff; 
+    margin: 0; 
+    padding: 0; 
+}
+
+
+html, body, .grid-container {
+    height: 100%;
+}
+
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide en dos columnas iguales */
-    gap: 20px; /* Espacio entre las columnas */
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    grid-template-columns: 50% 50%; 
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box; 
 }
+
 
 .input-section {
+    background-color: #333; 
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+    height: 60%; 
+    box-sizing: border-box; 
 }
+
 
 .chart-section {
+    background-color: #444;
     padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 60%; 
+    box-sizing: border-box; 
 }
 
-#csv-input {
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-label {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-}
-
-input[type="text"],
-select,
-input[type="color"] {
-    margin: 5px 0;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: #f5f5f5;
-    transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus,
-select:focus,
-input[type="color"]:focus {
-    outline: none;
-    border-color: #3498db;
-}
-
-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: block;
-    margin: 20px auto 10px;
-}
-
-button:hover {
-    background-color: #2680c7;
-}
 
 #chart-container {
-    margin-top: 20px;
-    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
-canvas {
-    max-width: 100%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+
+#chart {
+    width: 100%;
+    height: 100%;
 }
