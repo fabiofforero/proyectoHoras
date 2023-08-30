@@ -1,4 +1,4 @@
-google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', { 'packages': ['corechart'] });
 google.charts.setOnLoadCallback(initialize);
 
 var currentChart = null;
@@ -49,23 +49,23 @@ function graficar() {
 
 	switch (tipoGrafico) {
 		case 'ScatterChart':
-			options.hAxis = {title: tituloX, titleTextStyle: {color: 'ed'}};
-			options.vAxis = {title: tituloY, titleTextStyle: {color: 'blue'}};
+			options.hAxis = { title: tituloX, titleTextStyle: { color: 'ed' } };
+			options.vAxis = { title: tituloY, titleTextStyle: { color: 'blue' } };
 			currentChart = new google.visualization.ScatterChart(chartContainer);
 			break;
 		case 'LineChart':
-			options.hAxis = {title: tituloX, titleTextStyle: {color: 'ed'}};
-			options.vAxis = {title: tituloY, titleTextStyle: {color: 'blue'}};
+			options.hAxis = { title: tituloX, titleTextStyle: { color: 'ed' } };
+			options.vAxis = { title: tituloY, titleTextStyle: { color: 'blue' } };
 			currentChart = new google.visualization.LineChart(chartContainer);
 			break;
 		case 'BarChart':
-			options.hAxis = {title: tituloX, titleTextStyle: {color: 'ed'}};
-			options.vAxis = {title: tituloY, titleTextStyle: {color: 'blue'}};
+			options.hAxis = { title: tituloX, titleTextStyle: { color: 'ed' } };
+			options.vAxis = { title: tituloY, titleTextStyle: { color: 'blue' } };
 			currentChart = new google.visualization.BarChart(chartContainer);
 			break;
 		case 'AreaChart':
-			options.hAxis = {title: tituloX, titleTextStyle: {color: 'ed'}};
-			options.vAxis = {title: tituloY, titleTextStyle: {color: 'blue'}};
+			options.hAxis = { title: tituloX, titleTextStyle: { color: 'ed' } };
+			options.vAxis = { title: tituloY, titleTextStyle: { color: 'blue' } };
 			currentChart = new google.visualization.AreaChart(chartContainer);
 			break;
 		case 'PieChart':
